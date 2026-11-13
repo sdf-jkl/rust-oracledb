@@ -56,6 +56,7 @@ webpki-roots = "1.0.8"
 whoami = "2.1.2"
 
 [dev-dependencies]
+criterion = "0.8.2"
 rstest = "0.26.1"
 
 [lib]
@@ -64,3 +65,7 @@ doctest = false
 [[example]]
 name = "simple_arrow_query"
 required-features = ["arrow"]
+
+[[bench]]
+name = "fetch_text"
+harness = false
